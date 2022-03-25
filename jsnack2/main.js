@@ -4,7 +4,6 @@
 // Punti fatti e falli subiti.
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. 
 
-// id = teams;
 let soccerTeams = [
   {
     "nome" : "Sassuolo",
