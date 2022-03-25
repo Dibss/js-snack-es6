@@ -1,0 +1,13 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+#bikes{
+  max-width: 70%;
+  margin: 2em auto;
+  height: 25vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bikes{font-weight: 700; font-size: 1.2rem;}
