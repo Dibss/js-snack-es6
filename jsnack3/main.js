@@ -4,9 +4,26 @@
 
 const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
-const min = 1;
-const max = 5;
+const min = parseInt(prompt("Inserisci un numero compreso tra 0 e 4"));
+const max = parseInt(prompt("Inserisci un numero compreso tra 0 e 5 (maggiore di quello inserito precedentemente"));
 let newArray = [];
 
-console.log(minMax);
+myArray.forEach(
+  (element, i) => {
+    if(min <= i && max >= i){
+      newArray.push(element);
+    }
+  }
+)
 
+console.log(newArray);
+
+let boh = myArray.filter(
+  (element, i) => {
+    if(min <= i && max >= i){
+      return true;
+    }
+  }
+)
+
+console.log(boh);

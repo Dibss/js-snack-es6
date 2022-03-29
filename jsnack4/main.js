@@ -13,28 +13,32 @@ let students = [
   { name: 'Francesca', id: 120, grades: 84 },
 ];
 
-students.forEach(
+let uppercase = students.map(
   (element) => {
-    console.log(element);
-    document.getElementById("container").innerHTML += 
-    `
-    <div class="text-uppercase">${element.name}</div>
-    `
+    return element.name.toUpperCase();
   }
 )
+
+console.log(uppercase);
 
 let overSeventy = students.filter(
   (element) => {
     if(element.grades > 70){
       console.log(element.grades);
+      return true;
     }
   }
 )
+
+console.log(overSeventy);
 
 let elite = students.filter(
   (element) => {
     if(element.grades > 70 && element.id > 120){
       console.log(element.name);
+      return true;
     }
   }
 )
+
+console.log(elite);
